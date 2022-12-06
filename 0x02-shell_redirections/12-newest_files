@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -tl|find . -type f|tail -n 10
