@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#This script displays a list of currently running processes.
+
+echo "PID  PPID  USER  COMMAND"
+ps axo pid,ppid,user,cmd --forest
