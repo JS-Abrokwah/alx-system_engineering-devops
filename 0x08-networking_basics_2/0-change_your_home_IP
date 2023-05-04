@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# resolves localhost to 127.0.0.2 and facebook.com resolves to 8.8.8.8
+
+cp /etc/hosts ~/etc/hosts.myown
+
+echo "127.0.0.2		localhost" > ~/etc/hosts.myown
+echo "8.8.8.8		facebook.com" >> ~/etc/hosts.myown
+
+cp -f ~/etc/hosts.myown /etc/hosts
